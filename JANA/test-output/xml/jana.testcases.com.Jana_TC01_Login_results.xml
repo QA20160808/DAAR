@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TS01:- Search and Create Enquiry from  Accounts"
+<testsuite name="TS01:- Search and Create Enquiry from Customer"
            tests="1"
            failures="0"
            errors="0"
-           skipped="0"
-           time="3.429">
+           skipped="1"
+           time="0.001">
   <properties />
   
+            <testcase name="LoginPageintosystem" time="0.0" classname="jana.testcases.com.Jana_TC01_Login">
+          <skipped />
+    </testcase>
   
-            <testcase name="LoginPageintosystem" time="3.429" classname="jana.testcases.com.Jana_TC01_Login" />
-      
+  
 </testsuite>
