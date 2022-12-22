@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-20T14:12:31 IST" name="Default suite" finished-at="2022-12-20T14:12:50 IST" duration-ms="18572">
+    <groups>
+    </groups>
+    <test started-at="2022-12-20T14:12:31 IST" name="Default test" finished-at="2022-12-20T14:12:50 IST" duration-ms="18572">
+      <class name="daar.testcases.com.qf_TC02_NewLead">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:daar.testcases.com.qf_TC02_NewLead@7a69b07]" started-at="2022-12-20T14:12:29 IST" name="launchBrowser" finished-at="2022-12-20T14:12:31 IST" duration-ms="2874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="qf_newlead()[pri:0, instance:daar.testcases.com.qf_TC02_NewLead@7a69b07]" started-at="2022-12-20T14:12:31 IST" name="qf_newlead" finished-at="2022-12-20T14:12:50 IST" duration-ms="18543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- qf_newlead -->
+      </class> <!-- daar.testcases.com.qf_TC02_NewLead -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

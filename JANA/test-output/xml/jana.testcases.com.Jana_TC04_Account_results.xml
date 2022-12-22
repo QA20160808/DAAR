@@ -3,13 +3,11 @@
            tests="1"
            failures="0"
            errors="0"
-           skipped="1"
-           time="0.001">
+           skipped="0"
+           time="2.657">
   <properties />
   
-            <testcase name="SearchAccountByNumber" time="0.0" classname="jana.testcases.com.Jana_TC04_Account">
-          <skipped />
-    </testcase>
   
-  
+            <testcase name="SearchAccountByNumber" time="2.657" classname="jana.testcases.com.Jana_TC04_Account" />
+      
 </testsuite>

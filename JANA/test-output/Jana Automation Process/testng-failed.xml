@@ -14,21 +14,11 @@
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- jana.testcases.com.Jana_TC03_Enquiry -->
-      <class name="jana.testcases.com.Jana_TC04_Account">
-        <methods>
-          <include name="SearchAccountByNumber"/>
-        </methods>
-      </class> <!-- jana.testcases.com.Jana_TC04_Account -->
       <class name="jana.testcases.com.Logout">
         <methods>
           <include name="bd_logout"/>
         </methods>
       </class> <!-- jana.testcases.com.Logout -->
-      <class name="jana.testcases.com.Jana_TC01_Login">
-        <methods>
-          <include name="LoginPageintosystem"/>
-        </methods>
-      </class> <!-- jana.testcases.com.Jana_TC01_Login -->
     </classes>
   </test> <!-- TS01:- Search and Create Enquiry from  Accounts(failed) -->
   <test parallel="none" name="TS01:- Search and Create Enquiry from Customer(failed)">
