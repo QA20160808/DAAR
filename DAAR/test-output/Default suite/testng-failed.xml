@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="daar.testcases.com.qf_TC02_NewLead">
+      <class name="daar.testcases.com.Daar_TC_05_API_UnitSelection">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="qf_newlead"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- daar.testcases.com.qf_TC02_NewLead -->
+      </class> <!-- daar.testcases.com.Daar_TC_05_API_UnitSelection -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
