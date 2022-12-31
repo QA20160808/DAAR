@@ -1,11 +1,14 @@
 package jana.connection.com;
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.util.EntityUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -16,7 +19,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
+import jana.apis.com.LoginAPI;
 import jana.reposirty.com.Property;
 
 /**
@@ -28,6 +35,9 @@ public class CommonMethods extends Connection {
 	
 	static String parentWindowHandler1 = driver.getWindowHandle(); // Store your parent window
 	static String subWindowHandler1 = null;
+	
+	static RestClient restClient;
+	static CloseableHttpResponse closebaleHttpResponse;
 
 	
 	
@@ -242,7 +252,36 @@ public class CommonMethods extends Connection {
 
 	}
 	
+	public static String getBareertoken() throws JsonGenerationException, JsonMappingException, IOException{
+		
+	ObjectMapper mapper = new ObjectMapper();
+	
+	String responseString = EntityUtils.toString(closebaleHttpResponse.getEntity(), "UTF-8");
+	System.out.println(responseString);
+	org.json.simple.JSONObject responseJson = new org.json.simple.JSONObject();
+	System.out.println("The response from API is:"+ responseJson);
 
+		
+		LoginAPI authentication = mapper.readValue(responseString,LoginAPI.class);
+		
+
+		System.out.println(authentication.getAccess_token());
+		
+		String tokentype =authentication.getToken_type();
+		String aut_tkn = authentication.getAccess_token();
+		String barrrertkn=tokentype+" "+aut_tkn;
+		System.out.println("Genreated Token Is :"+" "+ barrrertkn);
+		return barrrertkn;
+	}
+	
+	
+	public static void enterHeader() {
+		
+		restClient = new RestClient();
+		HashMap<String, String> headerMap = new HashMap<String, String>();
+		headerMap.put("Content-Type", "application/json");
+		
+	}
 	
 	
 	

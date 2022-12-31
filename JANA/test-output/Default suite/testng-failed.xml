@@ -3,12 +3,11 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="jana.testcases.com.Jana_TC04_Account">
+      <class name="jana.testcases.com.Jana_TC_05_API_UnitSelection">
         <methods>
-          <include name="openAccountPage"/>
-          <include name="launchBrowser"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- jana.testcases.com.Jana_TC04_Account -->
+      </class> <!-- jana.testcases.com.Jana_TC_05_API_UnitSelection -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

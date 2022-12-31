@@ -1,50 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Jana Automation Process]">
-  <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-  </listeners>
-  <test parallel="none" name="TS01:- Search and Create Enquiry from  Accounts(failed)">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="jana.testcases.com.Jana_TC03_Enquiry">
+      <class name="jana.testcases.com.Jana_TC_05_API_UnitSelection">
         <methods>
-          <include name="closeEnquirybydetails"/>
-          <include name="createEnquiryFromHolding"/>
-          <include name="launchBrowser"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- jana.testcases.com.Jana_TC03_Enquiry -->
-      <class name="jana.testcases.com.Logout">
-        <methods>
-          <include name="bd_logout"/>
-        </methods>
-      </class> <!-- jana.testcases.com.Logout -->
+      </class> <!-- jana.testcases.com.Jana_TC_05_API_UnitSelection -->
     </classes>
-  </test> <!-- TS01:- Search and Create Enquiry from  Accounts(failed) -->
-  <test parallel="none" name="TS01:- Search and Create Enquiry from Customer(failed)">
-    <classes>
-      <class name="jana.testcases.com.Jana_TC03_Enquiry">
-        <methods>
-          <include name="closeEnquirybydetails"/>
-          <include name="createEnquiryFromCustomer360"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- jana.testcases.com.Jana_TC03_Enquiry -->
-      <class name="jana.testcases.com.Jana_TC02_Customer">
-        <methods>
-          <include name="SearchCustomer"/>
-        </methods>
-      </class> <!-- jana.testcases.com.Jana_TC02_Customer -->
-      <class name="jana.testcases.com.Logout">
-        <methods>
-          <include name="bd_logout"/>
-        </methods>
-      </class> <!-- jana.testcases.com.Logout -->
-      <class name="jana.testcases.com.Jana_TC01_Login">
-        <methods>
-          <include name="LoginPageintosystem"/>
-        </methods>
-      </class> <!-- jana.testcases.com.Jana_TC01_Login -->
-    </classes>
-  </test> <!-- TS01:- Search and Create Enquiry from Customer(failed) -->
-</suite> <!-- Failed suite [Jana Automation Process] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
